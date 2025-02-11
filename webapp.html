@@ -91,5 +91,11 @@
         </div>
         </fieldset>
     </form>
+    <script>
+        fetcch(data.json)
+        .then(response=> response.json())
+        .then(cells=>feel(cells))
+        .catch(err=> console.log(err))
+    </script>
 </body>
 </html>
