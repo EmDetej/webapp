@@ -92,7 +92,7 @@
         </fieldset>
     </form>
     <script>
-        fetch(data.json)
+        fetch('data.json')
         .then(response=> response.json())
         .then(cells=>feel(cells))
         .catch(err=> console.log(err))
