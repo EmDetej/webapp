@@ -91,5 +91,20 @@
         </div>
         </fieldset>
     </form>
+    <script>
+        fetcch(data.json)
+        .then(response=> response.json())
+        .then(cells=>feel(cells))
+        .catch(err=> console.log(err))
+        function feel(cells){
+            const values = Object.values(cells);
+            let i = 0;
+            while(i < values.length){
+                document.getElementById('n' + i).innerText = values[i].toFixed(2);
+                i++;
+            }   
+
+        }
+    </script>
 </body>
 </html>
