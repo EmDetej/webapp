@@ -36,7 +36,7 @@
                 <td id="n2"></td>
                 <td id="n3"></td>
                 <td id="n4"></td>
-                <td id="n5" class="tot"></td>
+                <td id="rt1" class="tot"></td>
             </tr>
             <tr>
                 <td class="row">2</td>
@@ -92,7 +92,11 @@
         </fieldset>
     </form>
     <script>
+<<<<<<< HEAD
         fetcch(data.json)
+=======
+        fetch('data.json')
+>>>>>>> 3186042722ea0ea6e942efbd982e4b9ce3f72baf
         .then(response=> response.json())
         .then(cells=>feel(cells))
         .catch(err=> console.log(err))
@@ -103,7 +107,17 @@
                 document.getElementById('n' + i).innerText = values[i].toFixed(2);
                 i++;
             }   
+<<<<<<< HEAD
 
+=======
+        total()
+        }
+        function total(){
+            let i=0
+            let sum=0
+            let rownum=0
+            let colnum=0
+>>>>>>> 3186042722ea0ea6e942efbd982e4b9ce3f72baf
         }
     </script>
 </body>
