@@ -92,11 +92,8 @@
         </fieldset>
     </form>
     <script>
-<<<<<<< HEAD
         fetcch(data.json)
-=======
         fetch('data.json')
->>>>>>> 3186042722ea0ea6e942efbd982e4b9ce3f72baf
         .then(response=> response.json())
         .then(cells=>feel(cells))
         .catch(err=> console.log(err))
@@ -115,13 +112,13 @@
             let rownum=0
             let colnum=0
             for(let i=0;i<15;i++){
-                sum+= parseFloat(document.getElementById('n'+i)).innerText)
+                sum+= parseFloat(document.getElementById('n'+i).innerText)
                 if((i+1)%5===0)
               {
                 document.getElementById('rt'+rownum).innerText= sum.toFixed(2);
                 rownum++;
                 sum = 0;
-              }  
+              }
 
         }
     }
