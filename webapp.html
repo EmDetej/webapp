@@ -135,6 +135,14 @@
                 }
                 document.getElementById('gt').innerText = sum.toFixed(2);
             }
+
+        function update(){
+            let row = document.getElementById('rownum').options.selectedIndex;
+            let col = document.getElementById('colnum').options.selectedIndex;
+            let newval = parseFloat(document.getElementById('newval').value);
+            let legend = document.getElementById('legend');
+            let target = null;
+        }
     </script>
 </body>
 </html>
