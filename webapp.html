@@ -92,7 +92,7 @@
         </fieldset>
     </form>
     <script>
-        
+
         fetch('data.json')
         .then(response=> response.json())
         .then(cells=>feel(cells))
@@ -104,7 +104,7 @@
                 document.getElementById('n' + i).innerText = values[i].toFixed(2);
                 i++;
             }
-        total()
+            total()
         }
         function total(){
             let i=0
